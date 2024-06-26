@@ -261,12 +261,15 @@ public class Sort {
         }
     }
 
+    
+// Função responsável por dividir o array usando o método mediana de três para escolher o pivô.
     private static int partition(int[] arr, int low, int high) {
-        // Mediana de três para escolha do pivô
+        // Calcula o índice do meio
         int mid = low + (high - low) / 2;
+        // Escolhe o pivô usando a função mediana de três
         int pivot = medianOfThree(arr, low, mid, high);
 
-        // Mova o pivô escolhido para a posição low
+       
         swap(arr, low, pivot);
         pivot = arr[low];
 
@@ -290,7 +293,7 @@ public class Sort {
         swap(arr, low, right);
         return right;
     }
-
+// Função que escolhe a mediana de três valores como pivô
     private static int medianOfThree(int[] arr, int low, int mid, int high) {
         if (arr[low] > arr[mid]) {
             swap(arr, low, mid);
@@ -303,7 +306,7 @@ public class Sort {
         }
         return mid;
     }
-
+// Função para trocar dois elementos do array
     private static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
