@@ -1,3 +1,6 @@
+
+**Isabela Lima da Cunha**
+
 **Informações Importantes**
 
 No método original do Quicksort, a escolha do pivô estava causando stack overflow, possivelmente devido a uma má escolha do pivô 
